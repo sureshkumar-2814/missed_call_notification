@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application android:label="MAUI_App"
+                 android:usesCleartextTraffic="false"
+                 android:icon="@mipmap/appicon">
+
+    <!-- Foreground Service Declaration -->
+    <service android:name="crc64a28b2b7292f79f32.MissedCallTrackingService"
+             android:exported="false"
+             android:foregroundServiceType="dataSync" />
+
+
+  </application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_CALL_LOG" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+</manifest>
